@@ -12,7 +12,7 @@ mongo.connect(url, function(err, db) {
       $gt: +age
     } 
   },
-  //{fields:{_id: 0}}
+  {fields:{_id: 0}}
   ).toArray(function(err, docs) {
     if (err) throw err        
         console.log(docs); 
